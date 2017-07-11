@@ -41,7 +41,7 @@
         <!-- 百度key -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="百度key" />
+            android:value="" />
 
         <service
             android:name="com.baidu.location.f"
