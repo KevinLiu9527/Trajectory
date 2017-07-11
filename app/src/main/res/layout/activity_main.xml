@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/track_MV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <LinearLayout
+        android:id="@+id/set_llt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/pause_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/speed_up_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加速" />
+
+        <Button
+            android:id="@+id/slow_down_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="减速" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/set_llt"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/set_llt"
+        android:layout_marginRight="16dp"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="全部"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
